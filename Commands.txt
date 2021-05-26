@@ -1,0 +1,18 @@
+Create & Launch an Ec2 instance using Amazon Linux 2 image
+and Follow Given Steps: as run Commands
+
+-->  Install mysql : yum install mysql -y
+
+--> Install PHP : amazon-linux-extras install php7.2 -y
+
+--> Install httpd : yum install httpd -y
+
+--> vim /etc/httpd/conf/httpd.conf
+
+--> Install WordPress : wget https://wordpress.org/latest.tar.gz
+
+--> Extract WordPress : tar -xzf latest.tar.gz
+
+--> mv wordpress /var/www/html
+
+--> chown -R apache: /var/www/html/wordpress
